@@ -1,0 +1,125 @@
+name: BearEssentials
+version: 1.0
+main: com.bearnation.bearessentials.BearEssentials
+api-version: 1.20
+
+commands:
+  gmc:
+    description: Switch to Creative mode
+    usage: /gmc [player]
+    permission: bearessentials.cmd.gmc
+  gms:
+    description: Switch to Survival mode
+    usage: /gms [player]
+    permission: bearessentials.cmd.gms
+  gma:
+    description: Switch to Adventure mode
+    usage: /gma [player]
+    permission: bearessentials.cmd.gma
+  gmsp:
+    description: Switch to Spectator mode
+    usage: /gmsp [player]
+    permission: bearessentials.cmd.gmsp
+  gamemode:
+    description: Change your gamemode or another player’s
+    usage: /gamemode <mode> [player]
+    permission: bearessentials.cmd.gamemode
+  invsee:
+    description: Opens another player's inventory
+    usage: /invsee <player>
+    permission: bearessentials.cmd.invsee
+  trash:
+    description: Opens a trash bin to dispose of unwanted items
+    usage: /trash
+    permission: bearessentials.cmd.trash
+  feed:
+    description: Feed yourself or another player
+    usage: /feed [player]
+    permission: bearessentials.cmd.feed
+  heal:
+    description: Heal yourself or another player
+    usage: /heal [player]
+    permission: bearessentials.cmd.heal
+  back:
+    description: Return to your last location
+    usage: /back
+    permission: bearessentials.cmd.back
+  hat:
+    description: Wear the item in your hand as a hat
+    usage: /hat
+    permission: bearessentials.cmd.hat
+  extinguish:
+    description: Extinguish yourself or another player
+    usage: /extinguish [player]
+    permission: bearessentials.cmd.extinguish
+  item:
+    description: Shows the item you're holding
+    usage: /item
+    permission: bearessentials.cmd.item
+permissions:
+  bearessentials.cmd.gmc:
+    description: Allows switching yourself to Creative
+    default: op
+  bearessentials.cmd.gmc.other:
+    description: Allows switching others to Creative
+    default: op
+  bearessentials.cmd.gms:
+    description: Allows switching yourself to Survival
+    default: op
+  bearessentials.cmd.gms.other:
+    description: Allows switching others to Survival
+    default: op
+  bearessentials.cmd.gma:
+    description: Allows switching yourself to Adventure
+    default: op
+  bearessentials.cmd.gma.other:
+    description: Allows switching others to Adventure
+    default: op
+  bearessentials.cmd.gmsp:
+    description: Allows switching yourself to Spectator
+    default: op
+  bearessentials.cmd.gmsp.other:
+    description: Allows switching others to Spectator
+    default: op
+  bearessentials.cmd.gamemode:
+    description: Allows use of /gamemode
+    default: op
+  bearessentials.cmd.invsee:
+    description: Allows viewing another player's inventory
+    default: op
+  bearessentials.cmd.trash:
+    description: Allows using the trash bin
+    default: true
+  bearessentials.cmd.feed:
+    description: Allows using /feed
+    default: op
+  bearessentials.cmd.feed.other:
+    description: Allows using /feed on others
+    default: op
+  bearessentials.cmd.heal:
+    description: Allows using /heal
+    default: op
+  bearessentials.cmd.heal.other:
+    description: Allows using /heal on others
+    default: op
+  bearessentials.cmd.back:
+    description: Allows using /back
+    default: op
+  bearessentials.cmd.hat:
+    description: Allows using /hat
+    default: op
+  bearessentials.cmd.extinguish:
+    description: Allows using /extinguish
+    default: op
+  bearessentials.cmd.extinguish.other:
+    description: Allows using /extinguish on others
+    default: op
+  bearessentials.invsee.modify:
+    description: Allows modifying other players' inventories with /invsee
+    default: op
+  bearessentials.signcolor:
+    description: Allows players to use & color codes on signs
+    default: op
+  bearessentials.cmd.item:
+    description: Allows use of /item
+    default: true
